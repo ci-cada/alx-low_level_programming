@@ -1,1 +1,1 @@
-This directory contains tasks from alx 0x07 more pointer, arrays and strings
+ Alx tasks on  0x07 more pointer, arrays and strings

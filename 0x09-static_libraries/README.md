@@ -1,1 +1,1 @@
-this directory contains alx task on static libraries project
+Alx tasks on static libraries project

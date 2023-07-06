@@ -21,6 +21,7 @@ Repo containing all the AlX low level programming tasks and challenges in data s
 * [0x11. C - Printf](./0x11-printf)
 * [0x12. C - Singly linked lists](./0x12-singly_linked_lists)
 * [0x13. C - More singly linked lists](./0x13-more_singly_linked_lists)
+* [0x14. c - Bit manipulation](./0x14-bit-manipulation)
 * [0x0A. C - argc, argv](./0x0A-argc_argv)
 * [0x0B. C - malloc, free](./0x0B-malloc_free)
 * [0x0C. C - more malloc, free](./0x0C-more_malloc_free)

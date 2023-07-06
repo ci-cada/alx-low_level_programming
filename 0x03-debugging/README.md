@@ -1,1 +1,1 @@
-this directory contains alx tasks on the debugging project.
+Alx tasks on the debugging project.
