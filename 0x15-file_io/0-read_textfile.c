@@ -12,32 +12,32 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fail, length, i, result;
+	int file, length, var, out;
 	char *checker;
 
 	if (filename == NULL)
 		return (0);
 
-	fail= open(filename, O_RDONLY);
-	if (fail != 0 )
+	file = open(filename, O_RDONLY);
+	if (file == -1)
 		return (0);
 
 	checker = malloc(sizeof(char) * letters);
 	if (checker == NULL)
 		return (0);
 
-	read(fail, checker, letters);
+	read(file, checker, letters);
 	checker[letters] = '\0';
 
-	for (i = 0; checker[i] != '\0'; i++)
+	for (var = 0; checker[var] != '\0'; var++)
 		length += 1;
 
-	result = close(fail);
-	if (result == -1)
+	out = close(file);
+	if (out != 0)
 		exit(-1);
 
-	result = write(STDOUT_FILENO, checker, length);
-	if (result != length)
+	out = write(STDOUT_FILENO, checker, length);
+	if (out != length)
 		return (0);
 
 	free(checker);
